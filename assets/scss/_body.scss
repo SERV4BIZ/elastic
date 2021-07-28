@@ -1,0 +1,35 @@
+body {
+    color:$colorText;
+    background-color: $colorBackground;
+
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+// close all the scroll bars
+::-webkit-scrollbar {
+    width: 0;
+}
+
+// Safearea
+$safeBottom: env(safe-area-inset-bottom);
+$safeTop: env(safe-area-inset-top);
+
+a {
+    text-decoration: none;
+    transition: 0.2s all;
+    color: $primary;
+    outline: 0 !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 0 !important;
+        color: $primary;
+        text-decoration: none;
+    }
+}
